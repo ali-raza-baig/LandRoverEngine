@@ -16,9 +16,9 @@ const HomeHeroSection = () => {
 
     const trustBadges = [
         { icon: FaRegCheckCircle, text: 'Genuine failure data from thousands of UK owners' },
+        { icon: FaStar, text: '100% independent. No sponsors. No bias.' },
         { icon: GiHistogram, text: ' Honest repair vs replace economics' },
         { icon: FaWrench, text: 'Expertly verified by 20+ vetted JLR specialists' },
-        { icon: FaStar, text: '100% independent. No sponsors. No bias.' },
     ]
     return (
         <>
@@ -36,19 +36,19 @@ const HomeHeroSection = () => {
 
                 {/* Content */}
                 <div className="relative z-10 flex flex-col h-full justify-center">
-                    <div className="w-full lg:max-w-2xl mt-28   px-6 md:px-10 lg:px-14 text-white">
-                        <h1 className="text-3xl md:text-5xl lg:text-6xl font-semibold">
+                    <div className="w-full lg:max-w-2xl 2xl:max-w-4xl mt-28 xl:mt-30 2xl:mt-50 px-6 md:px-10 lg:px-14 text-white">
+                        <h1 className="text-3xl md:text-5xl lg:text-6xl 2xl:text-9xl font-semibold">
                             The UK's Most Trusted Land Rover & Range Rover Ownership Guide
                         </h1>
 
-                        <p className="mt-6 max-w-xl text-md lg:text-xl text-gray-200">
+                        <p className="mt-6 max-w-xl text-md lg:text-xl 2xl:text-2xl text-gray-200">
                             Reliability rankings, real failure data, honest repair-vs-replace economics — for every Defender, Discovery, Range Rover, Evoque, Velar and Freelander ever sold in the UK.
 
                         </p>
                     </div>
-                    <div className='px-14 mt-10 flex flex-wrap gap-4'>
+                    <div className='px-14 mt-10 flex flex-wrap gap-4 pb-2'>
                         {trustStrip.map((t, i) => (
-                            <div className={`flex gap-2 w-[47%] lg:w-40 ${i === trustStrip.length - 1 ? 'border-r border-golden lg:border-0' : 'border-r border-golden'}`}>
+                            <div className={`flex gap-2 w-[41%] lg:w-40 ${i === trustStrip.length - 1 ? 'border-r border-golden lg:border-0' : 'border-r border-golden'}`}>
                                 <t.icon className='text-golden text-2xl' size={35} />
                                 <p>{t.text}</p>
                             </div>
