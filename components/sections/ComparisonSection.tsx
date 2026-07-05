@@ -9,7 +9,7 @@ const ComparisonSection = () => {
             <div className='w-full max-w-3xl mx-auto text-center'>
                 <h2 className='text-2xl lg:text-3xl 2xl:text-6xl font-medium lg:font-semibold '>Comparison Hub — Head-to-Head Verdicts</h2>
                 <div className=' m-2 h-0.5 w-[95%] bg-linear-to-l from-transparent via-golden to-transparent' />
-                <p className='text-base lg:text-lg 2xl:text-xl'>The comparisons Land Rover buyers actually want — generation vs generation, engine vs engine, model vs model. Honest, data-backed, and built for real-world decision-making.
+                <p className='text-base lg:text-lg 2xl:text-xl p-2'>The comparisons Land Rover buyers actually want — generation vs generation, engine vs engine, model vs model. Honest, data-backed, and built for real-world decision-making.
                 </p>
             </div>
 
@@ -17,7 +17,7 @@ const ComparisonSection = () => {
 
                 {comparisons.map((c) => (
                     <div key={c.id} className=' rounded-lg border border-golden shadow shadow-golden transition-all duration-300 hover:-translate-y-1.5 col-span-1 w-[97%] p-4 flex flex-col items-center gap-4'>
-                        <div className='pb-4 inline text-lg font-semibold border-b-[0.5px] border-golden'>
+                        <div className='pb-4 inline text-sm lg:text-lg font-semibold border-b-[0.5px] border-golden'>
                             <span>{c.left}</span>
                             <span className='p-2 rounded-full border border-golden inset-shadow-sm inset-shadow-golden m-2 text-golden!'>VS</span>
                             <span>{c.right}</span>
@@ -29,7 +29,6 @@ const ComparisonSection = () => {
                         </div>
                     </div>
                 ))}
-
 
 
             </div>

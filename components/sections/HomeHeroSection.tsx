@@ -59,7 +59,7 @@ const HomeHeroSection = () => {
 
             </section>
 
-            <div className='m-1 mt-4 lg:mt-0 lg:m-4 flex items-center justify-center flex-wrap gap-4'>
+            <div className='m-1 mt-4 lg:mt-6 lg:m-4 flex items-center justify-center flex-wrap gap-4'>
                 {trustBadges.map((t) => (
                     <div className='flex flex-col lg:flex-row gap-3 rounded-md border border-golden w-[47%] lg:w-[20%] p-4'>
                         <t.icon className='text-golden' size={40} />

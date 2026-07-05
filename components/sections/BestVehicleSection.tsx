@@ -32,7 +32,7 @@ const BestVehicleSection = () => {
                 </div>
             </section>
 
-            <div className='max-w-5xl w-[97%] mx-auto mt-4 flex flex-col lg:flex-row gap-2 text-center lg:text-start items-center justify-evenly p-4 rounded-md border border-golden'>
+            <div className='max-w-5xl mb-10 w-[97%] mx-auto mt-4 flex flex-col lg:flex-row gap-2 text-center lg:text-start items-center justify-evenly p-4 rounded-md border border-golden'>
                 <FaUsers className='text-golden text-8xl' />
                 <div>
                     <h3 className='text-xl font-semibold'>Not sure which engine or model right for you?</h3>

@@ -1,58 +1,65 @@
 import React from 'react'
+import Table from './Table'
+import { rankings } from '@/assets/constant'
+
+export const rankingColumns = [
+    {
+        key: "id",
+        title: "#",
+        render: (row: any) => {
+            return (
+                <span className='text-xl font-bold text-golden'>{row.id}</span>
+            )
+        }
+    },
+    {
+        key: "ranking",
+        title: "Category",
+        render: (row: any) => (
+            <div className='flex items-center justify-start gap-2'>
+                <img src={row.img} alt="" className='w-20 h-20 rounded-full border border-golden' />
+                <p className='text-md font-medium text-white'>{row.ranking}</p>
+            </div>
+        )
+    },
+    {
+        key: "winner",
+        title: "Winner",
+    },
+    {
+        key: "reason",
+        title: "Why",
+        render: (row: any) => (
+            <span className="text-gray-300 w-10 text-sm leading-relaxed">
+                {row.reason}
+            </span>
+        ),
+    },
+    {
+        key: "verdict",
+        title: "Verdict",
+        render: (row: any) => {
+            const Icon = row.icon;
+
+            return (
+                <div
+                    className={`inline-flex items-center gap-2 rounded-md px-3 py-1 ${row.verdictBg}`}
+                >
+                    <Icon className={row.verdictColor} size={14} />
+                    <span className={`font-medium ${row.verdictColor}`}>
+                        {row.verdict}
+                    </span>
+                </div>
+            );
+        },
+    },
+];
 
 const OwnershipTable = () => {
     return (
-        <section className="w-full mt-10">
-            <div className="overflow-x-auto rounded-xl border border-golden">
-                <table className="min-w-[900px] w-full border-collapse">
-                    <thead className="bg-black text-white">
-                        <tr>
-                            <th className="px-4 py-4 text-left font-semibold border-b border-golden">
-                                #
-                            </th>
-                            <th className="px-4 py-4 text-left font-semibold border-b border-golden">
-                                Category
-                            </th>
-                            <th className="px-4 py-4 text-left font-semibold border-b border-golden">
-                                Winner
-                            </th>
-                            <th className="px-4 py-4 text-left font-semibold border-b border-golden">
-                                Why
-                            </th>
-                            <th className="px-4 py-4 text-left font-semibold border-b border-golden">
-                                Verdict
-                            </th>
-                        </tr>
-                    </thead>
-
-                    <tbody className="bg-white">
-                        <tr className="hover:bg-gray-50 transition-colors">
-                            <td className="px-4 py-5 border-b border-gray-200 font-semibold">
-                                1
-                            </td>
-
-                            <td className="px-4 py-5 border-b border-gray-200">
-                                Most Reliable Engine
-                            </td>
-
-                            <td className="px-4 py-5 border-b border-gray-200 font-semibold text-golden">
-                                4.4 SDV8 (508PS)
-                            </td>
-
-                            <td className="px-4 py-5 border-b border-gray-200 text-gray-700">
-                                Highest replacement cost in the range, but by
-                                far the lowest failure rate — oil cooler wear
-                                aside, largely trouble-free.
-                            </td>
-
-                            <td className="px-4 py-5 border-b border-gray-200 whitespace-nowrap">
-                                🏆 Best
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
+        <div className='max-w-6xl 2xl:max-w-7xl mx-auto'>
+            <Table columns={rankingColumns} data={rankings} />
+        </div>
     )
 }
 

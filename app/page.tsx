@@ -5,6 +5,7 @@ import DatabaseSection from '@/components/sections/DatabaseSection'
 import DecisionSection from '@/components/sections/DecisionSection'
 import HomeHeroSection from '@/components/sections/HomeHeroSection'
 import KnowledgeSection from '@/components/sections/KnowledgeSection'
+import OwnershipSection from '@/components/sections/OwnershipSection'
 import React from 'react'
 
 const page = () => {
@@ -12,7 +13,7 @@ const page = () => {
     <div>
       <HomeHeroSection />
       <BestVehicleSection />
-      {/* <OwnershipTable /> */}
+      <OwnershipSection />
       <DatabaseSection />
       <KnowledgeSection />
       <ComparisonSection />

@@ -6,7 +6,7 @@ import { FaArrowRightLong } from 'react-icons/fa6'
 
 const KnowledgeSection = () => {
     return (
-        <section className='-mt-2 lg:-mt-10 py-20 bg-[#070E17]'>
+        <section className=' py-10 bg-[#070E17]'>
             <div className='w-full max-w-3xl mx-auto text-center'>
                 <h2 className='text-2xl lg:text-3xl 2xl:text-6xl font-medium lg:font-semibold '>Knowledge Centres</h2>
                 <div className=' m-2 h-0.5 w-[95%] bg-linear-to-l from-transparent via-golden to-transparent' />
