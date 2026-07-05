@@ -15,7 +15,7 @@ interface IProps {
 
 const FailureAccordianCard = ({ img, title, des, severity, Icon, SeverityClass }: IProps) => {
     return (
-        <div className='transition-all duration-300 hover:-translate-y-2 p-2 bg-[#0C1A1F]  w-full  rounded-md border border-golden shadow-sm shadow-golden'>
+        <div className='transition-all duration-300 hover:-translate-y-2 p-2 mb-1 bg-[#0C1A1F]  w-full  rounded-md border border-golden shadow-sm shadow-golden'>
             <div className='flex flex-col justify-center items-center gap-4'>
 
                 <img src={img} alt="" className='rounded-full border border-golden w-30 h-25' />

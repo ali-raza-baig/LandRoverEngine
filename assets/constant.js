@@ -1,3 +1,21 @@
+import {
+    FaWrench,
+    FaCogs,
+    FaRoad,
+    FaMountain,
+    FaLink,
+    FaCheckCircle,
+    FaExclamationTriangle,
+    FaTimesCircle,
+} from "react-icons/fa";
+
+import {
+
+    GiGearHammer,
+    GiGearStickPattern,
+} from "react-icons/gi";
+
+import { MdOutlineCarRepair } from "react-icons/md";
 
 import {
     BiErrorCircle,
@@ -170,3 +188,207 @@ export const electricalFailures = [
     },
 ];
 
+
+export const knowledgeCentre = [
+    {
+        id: 1,
+        title: "TDV6 Knowledge Centre",
+        description:
+            "Every variant, every failure, every generation it was fitted to — the 2.7 and 3.0 TDV6/SDV6 complete guide.",
+        Icon: FaWrench,
+    },
+    {
+        id: 2,
+        title: "SDV6 Knowledge Centre",
+        description:
+            "The 3.0 V6 diesel's full ownership profile — performance, reliability, and known issues.",
+        Icon: FaCogs,
+    },
+    {
+        id: 3,
+        title: "Ingenium Knowledge Centre",
+        description:
+            "Petrol vs diesel reliability, pre- and post-2019 changes, and what to look for when buying.",
+        Icon: FaLink,
+    },
+    {
+        id: 4,
+        title: "SDV8 Knowledge Centre",
+        description:
+            "The 4.4 V8 diesel's reliability record and running costs — the most durable engine in the range.",
+        Icon: FaMountain,
+    },
+    {
+        id: 5,
+        title: "Air Suspension Knowledge Centre",
+        description:
+            "Common faults, compressor failure, replacement costs, and how to diagnose EAS issues.",
+        Icon: MdOutlineCarRepair,
+    },
+    {
+        id: 6,
+        title: "Terrain Response Systems",
+        description:
+            "What goes wrong, what it costs to fix, and how to maintain JLR's advanced 4x4 system.",
+        Icon: FaRoad,
+    },
+    {
+        id: 7,
+        title: "ZF Gearbox Problems",
+        description:
+            "The 8-speed automatic's known issues across JLR's range — mechatronic, torque converter, and more.",
+        Icon: GiGearStickPattern,
+    },
+    {
+        id: 8,
+        title: "Transfer Box & Differential Problems",
+        description:
+            "4x4 system faults by model and generation — ATC300/400 chain stretch, diff whine, and UJ failures.",
+        Icon: GiGearHammer,
+    },
+];
+
+export const comparisons = [
+    {
+        id: 1,
+        left: "Discovery 4",
+        right: "Discovery 5",
+        question: "Which generation should you buy?",
+        verdict:
+            "Compare reliability, running costs, ownership experience, and long-term value.",
+    },
+    {
+        id: 2,
+        left: "L405 Range Rover",
+        right: "L460 Range Rover",
+        question: "Is the extra outlay worth it?",
+        verdict:
+            "Compare ownership costs, reliability, technology, and resale value.",
+    },
+    {
+        id: 3,
+        left: "TDV6",
+        right: "SDV6",
+        question: "What's the real difference?",
+        verdict:
+            "Compare performance, reliability, maintenance requirements, and replacement costs side-by-side.",
+    },
+    {
+        id: 4,
+        left: "Ingenium",
+        right: "TDV6",
+        question: "Which engine should you buy?",
+        verdict:
+            "Compare fuel economy, reliability, maintenance, and long-term ownership costs.",
+    },
+    {
+        id: 5,
+        left: "Defender",
+        right: "Discovery",
+        question: "Which is the better everyday SUV?",
+        verdict:
+            "Compare practicality, interior space, off-road capability, running costs, and daily usability.",
+    },
+    {
+        id: 6,
+        left: "Range Rover Sport",
+        right: "Discovery",
+        question: "Which offers better value for money?",
+        verdict:
+            "Compare ownership costs, depreciation, maintenance, and overall value over 3–5 years.",
+    },
+];
+
+
+export const decisionMatrix = [
+    {
+        id: 1,
+        model: "Discovery 4",
+        engine: "SDV6",
+        img: "/images/hero-image.png",
+        vehicleValue: "£6,000–£18,000",
+        replacementCost: "£6,500–£9,500",
+        verdict: "Watch",
+        verdictLine:
+            "Sub-£10k examples approach the replacement cost threshold.",
+        verdictColor: "text-yellow-400",
+        verdictBg: "bg-yellow-500/10",
+        verdictBorder: "border-yellow-500/30",
+        Icon: FaExclamationTriangle,
+    },
+    {
+        id: 2,
+        model: "Freelander 2",
+        engine: "204DTD",
+        img: "/images/vehicles/freelander-2.webp",
+        vehicleValue: "£2,500–£7,000",
+        replacementCost: "£3,500–£5,800",
+        verdict: "Scrap Threshold",
+        verdictLine:
+            "Reconditioned engine cost frequently exceeds the vehicle's value.",
+        verdictColor: "text-red-500",
+        verdictBg: "bg-red-500/10",
+        verdictBorder: "border-red-500/30",
+        Icon: FaTimesCircle,
+    },
+    {
+        id: 3,
+        model: "Range Rover Sport L494",
+        engine: "Various",
+        img: "/images/vehicles/range-rover-sport-l494.webp",
+        vehicleValue: "£12,000–£55,000",
+        replacementCost: "£5,000–£12,000",
+        verdict: "Safe",
+        verdictLine:
+            "Engine replacement remains financially viable across most examples.",
+        verdictColor: "text-green-500",
+        verdictBg: "bg-green-500/10",
+        verdictBorder: "border-green-500/30",
+        Icon: FaCheckCircle,
+    },
+    {
+        id: 4,
+        model: "Range Rover L405",
+        engine: "Various",
+        img: "/images/vehicles/range-rover-l405.webp",
+        vehicleValue: "£14,000–£55,000",
+        replacementCost: "£6,500–£12,000",
+        verdict: "Safe",
+        verdictLine:
+            "Replacement cost is comfortably below typical market value.",
+        verdictColor: "text-green-500",
+        verdictBg: "bg-green-500/10",
+        verdictBorder: "border-green-500/30",
+        Icon: FaCheckCircle,
+    },
+    {
+        id: 5,
+        model: "Defender L663",
+        engine: "Various",
+        img: "/images/vehicles/defender-l663.webp",
+        vehicleValue: "£35,000–£90,000",
+        replacementCost: "£3,500–£9,500",
+        verdict: "Safe",
+        verdictLine:
+            "Very safe investment across all engine and trim variants.",
+        verdictColor: "text-green-500",
+        verdictBg: "bg-green-500/10",
+        verdictBorder: "border-green-500/30",
+        Icon: FaCheckCircle,
+    },
+    {
+        id: 6,
+        model: "Range Rover Sport L320",
+        engine: "368DT",
+        img: "/images/vehicles/range-rover-sport-l320.webp",
+        vehicleValue: "£5,000–£15,000",
+        replacementCost: "£5,500–£8,000",
+        verdict: "Watch",
+        verdictLine:
+            "Older examples often sit at 40–60% of replacement cost.",
+        verdictColor: "text-yellow-400",
+        verdictBg: "bg-yellow-500/10",
+        verdictBorder: "border-yellow-500/30",
+        Icon: FaExclamationTriangle,
+    },
+];

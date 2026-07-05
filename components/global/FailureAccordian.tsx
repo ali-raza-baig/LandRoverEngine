@@ -28,9 +28,9 @@ const FailureAccordian = ({ open, cards, setOpen, title, Icon }: Props) => {
                 </div>
             </div>
             {open && (
-                <div>
+                <div className='flex flex-col gap-1'>
                     {cards.map((e: any) => (
-                        <FailureAccordianCard img={e?.img} title={e.title} des={e.description} severity={e.severity} Icon={e.icon} SeverityClass={e.severityColor} />
+                        <FailureAccordianCard key={e.title} img={e?.img} title={e.title} des={e.description} severity={e.severity} Icon={e.icon} SeverityClass={e.severityColor} />
                     ))}
                 </div>
             )}

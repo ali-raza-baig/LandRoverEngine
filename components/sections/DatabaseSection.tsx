@@ -27,9 +27,9 @@ const failureSections = [
 ];
 
 const DatabaseSection = () => {
-    const [open, setOpen] = useState<number>(0);
+    const [openSections, setOpenSections] = useState<number[]>([0]);
     return (
-        <section className='my-10 pt-10 bg-[#070E17]'>
+        <section className='mt-10  bg-[#070E17]'>
             <div className='w-full max-w-3xl mx-auto text-center'>
                 <h2 className='text-2xl lg:text-3xl 2xl:text-6xl font-medium lg:font-semibold '>The Land Rover & Range Rover Failure Database</h2>
                 <div className=' m-2 h-0.5 w-[95%] bg-linear-to-l from-transparent via-golden to-transparent' />
@@ -90,18 +90,23 @@ const DatabaseSection = () => {
                 </div>
             </div>
 
-            <div className="lg:hidden my-6 mx-2 space-y-4">
+            <div className="lg:hidden  mx-2 space-y-4">
                 {failureSections.map((section, index) => (
                     <FailureAccordian
                         key={section.title}
                         title={section.title}
                         cards={section.cards}
-                        open={open === index}
-                        setOpen={() => setOpen(open === index ? -1 : index)}
+                        open={openSections.includes(index)}
+                        setOpen={() =>
+                            setOpenSections((prev) =>
+                                prev.includes(index)
+                                    ? prev.filter((i) => i !== index)
+                                    : [...prev, index]
+                            )
+                        }
                     />
                 ))}
             </div>
-
 
         </section>
     )
