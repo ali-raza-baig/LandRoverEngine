@@ -46,9 +46,9 @@ const HomeHeroSection = () => {
 
                         </p>
                     </div>
-                    <div className='px-14 mt-10 flex flex-wrap gap-4 pb-2'>
+                    <div className='px-4 lg:px-14 mt-10 mx-auto flex flex-wrap gap-4 pb-2'>
                         {trustStrip.map((t, i) => (
-                            <div className={`flex gap-2 w-[41%] lg:w-40 ${i === trustStrip.length - 1 ? 'border-r border-golden lg:border-0' : 'border-r border-golden'}`}>
+                            <div className={` flex flex-col lg:flex-row gap-2 w-[41%] lg:w-40 ${i === trustStrip.length - 1 ? 'border-r border-golden lg:border-0' : 'border-r border-golden'}`}>
                                 <t.icon className='text-golden text-2xl' size={35} />
                                 <p>{t.text}</p>
                             </div>
@@ -59,7 +59,7 @@ const HomeHeroSection = () => {
 
             </section>
 
-            <div className='m-4 flex items-center justify-center flex-wrap gap-4'>
+            <div className='m-1 mt-4 lg:mt-0 lg:m-4 flex items-center justify-center flex-wrap gap-4'>
                 {trustBadges.map((t) => (
                     <div className='flex flex-col lg:flex-row gap-3 rounded-md border border-golden w-[47%] lg:w-[20%] p-4'>
                         <t.icon className='text-golden' size={40} />
