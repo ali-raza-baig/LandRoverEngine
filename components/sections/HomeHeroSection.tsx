@@ -36,7 +36,7 @@ const HomeHeroSection = () => {
 
                 {/* Content */}
                 <div className="relative z-10 flex flex-col h-full justify-center">
-                    <div className="w-full lg:max-w-2xl 2xl:max-w-4xl mt-28 xl:mt-30 2xl:mt-50 px-6 md:px-10 lg:px-14 text-white">
+                    <div className="w-full lg:max-w-2xl 2xl:max-w-6xl mt-28 xl:mt-30 2xl:mt-50 px-6 md:px-10 lg:px-14 2xl:px-30 text-white">
                         <h1 className="text-3xl md:text-5xl lg:text-6xl 2xl:text-9xl font-semibold">
                             The UK's Most Trusted Land Rover & Range Rover Ownership Guide
                         </h1>
@@ -46,7 +46,7 @@ const HomeHeroSection = () => {
 
                         </p>
                     </div>
-                    <div className='px-4 lg:px-14 mt-10  flex flex-wrap gap-4 pb-2'>
+                    <div className='px-4 lg:px-14 2xl:px-30 mt-10  flex flex-wrap gap-4 pb-2'>
                         {trustStrip.map((t, i) => (
                             <div className={` flex flex-col lg:flex-row gap-2 w-[41%] lg:w-40 ${i === trustStrip.length - 1 ? 'border-r border-golden lg:border-0' : 'border-r border-golden'}`}>
                                 <t.icon className='text-golden text-2xl' size={35} />

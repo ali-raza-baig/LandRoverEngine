@@ -40,7 +40,7 @@ const DatabaseSection = () => {
                 <div className='hidden lg:block'>
                     <div className='my-6 flex flex-col justify-center'>
 
-                        <h3 className='lg:pl-20 2xl:pl-40 py-2 mb-2 flex items-center gap-2 font-bold text-2xl' >
+                        <h3 className='lg:pl-20 2xl:pl-100 py-2 mb-2 flex items-center gap-2 font-bold text-2xl' >
                             <FaWrench className='text-golden  ' />
                             {'Engine Failures'.toUpperCase()}</h3>
 
@@ -53,7 +53,7 @@ const DatabaseSection = () => {
 
                     <div className='my-6 flex flex-col justify-center'>
 
-                        <h3 className='lg:pl-20 2xl:pl-40 py-2 mb-2 flex items-center gap-2 font-bold text-2xl' >
+                        <h3 className='lg:pl-20 2xl:pl-100 py-2 mb-2 flex items-center gap-2 font-bold text-2xl' >
                             <FaWrench className='text-golden  ' />
                             {'Suspension Failures'.toUpperCase()}</h3>
 
@@ -66,7 +66,7 @@ const DatabaseSection = () => {
 
                     <div className='my-6 flex flex-col justify-center'>
 
-                        <h3 className='lg:pl-20 2xl:pl-40 py-2 mb-2 flex items-center gap-2 font-bold text-2xl' >
+                        <h3 className='lg:pl-20 2xl:pl-100 py-2 mb-2 flex items-center gap-2 font-bold text-2xl' >
                             <FaWrench className='text-golden  ' />
                             {'Drivetrain Failures'.toUpperCase()}</h3>
 
@@ -79,7 +79,7 @@ const DatabaseSection = () => {
 
                     <div className='my-6 flex flex-col justify-center'>
 
-                        <h3 className='lg:pl-20 2xl:pl-40 py-2 mb-2 flex items-center gap-2 font-bold text-2xl' >
+                        <h3 className='lg:pl-20 2xl:pl-100 py-2 mb-2 flex items-center gap-2 font-bold text-2xl' >
                             <FaWrench className='text-golden  ' />
                             {'Electrical Failures'.toUpperCase()}</h3>
 
