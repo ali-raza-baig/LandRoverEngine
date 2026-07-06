@@ -1,0 +1,47 @@
+{
+  "_meta": {
+    "description": "LandRoverEngine.uk market intelligence feed. Update monthly. Fetched via getStaticProps at build time (revalidate every 24h) or client-side with a 24-hour cache.",
+    "lastUpdated": "2026-07-01",
+    "refreshFrequency": "monthly",
+    "dataSource": "EnginesMarket CRM — EM_Proprietary_Data_2025.txt"
+  },
+  "mostRequestedEngines2025": [
+    { "engineCode": "204DTD", "label": "Ingenium Diesel", "enquiries": 1150, "emVerified": true },
+    { "engineCode": "306DT", "label": "TDV6/SDV6 3.0", "enquiries": 980, "emVerified": true },
+    { "engineCode": "276DT", "label": "2.7 TDV6", "enquiries": 700, "emVerified": true },
+    { "engineCode": "368DT", "label": "3.6 TDV8", "enquiries": 650, "emVerified": true },
+    { "engineCode": "508PS", "label": "4.4 SDV8", "enquiries": 620, "emVerified": true },
+    { "engineCode": "204PT", "label": "Ingenium Petrol", "enquiries": 480, "emVerified": true },
+    { "engineCode": "224DT", "label": "2.2 Duratorq", "enquiries": 350, "emVerified": true }
+  ],
+  "mostEnquiredModels2025": [
+    { "model": "Discovery Sport L550", "enquiries": 362, "emVerified": true },
+    { "model": "Range Rover Evoque L551", "enquiries": 349, "emVerified": true },
+    { "model": "Range Rover Sport L494", "enquiries": 308, "emVerified": true },
+    { "model": "Defender L663", "enquiries": 292, "emVerified": true },
+    { "model": "Range Rover L405", "enquiries": 284, "emVerified": true },
+    { "model": "Range Rover Evoque L538", "enquiries": 244, "emVerified": true }
+  ],
+  "highestRiskFailures": [
+    { "failure": "306DT crankshaft bearing failure", "note": "Catastrophic — little rebuildable material once it starts", "enquiries": 980, "emVerified": true },
+    { "failure": "276DT oil pump housing failure", "note": "Often kills the engine outright", "enquiries": 700, "emVerified": true },
+    { "failure": "204DTD pre-2019 timing chain tensioner wear", "note": "Improved significantly from 2019 onward", "enquiries": 1150, "emVerified": true }
+  ],
+  "liveEnquiryFeed": [
+    { "vehicle": "Discovery 4 (SDV6)", "location": "Surrey", "issue": "Cold-start knock", "timestamp": "3 hours ago" },
+    { "vehicle": "Range Rover Evoque (204DTD)", "location": "Leeds", "issue": "Limp mode, EGR fault", "timestamp": "5 hours ago" },
+    { "vehicle": "Defender L663 (306DT)", "location": "Aberdeen", "issue": "Pre-purchase inspection", "timestamp": "7 hours ago" }
+  ],
+  "regionalDemand": [
+    { "region": "South East", "percentage": 21 },
+    { "region": "London", "percentage": 19 },
+    { "region": "South West", "percentage": 14 },
+    { "region": "Midlands", "percentage": 12 },
+    { "region": "North West", "percentage": 10 }
+  ],
+  "trustStrip": {
+    "totalEnquiries": "9,000+",
+    "vettedSpecialists": "20+",
+    "engineCodesTracked": "15+"
+  }
+}
