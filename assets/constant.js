@@ -400,7 +400,7 @@ export const rankings = [
         id: 1,
         ranking: "Most Reliable Engine",
         winner: "4.4 SDV8 (508PS)",
-        img: "/images/hero-image.png",
+        img: "https://enginefinders.co.uk/asset/img/range-rover-mainline-hero.webp",
         reason:
             "Highest replacement cost in the range, but by far the lowest failure rate — oil cooler wear aside, largely trouble-free.",
         verdict: "Best",
@@ -412,7 +412,7 @@ export const rankings = [
         id: 2,
         ranking: "Most Reliable Model",
         winner: "Discovery 5",
-        img: "/images/rankings/discovery-5.webp",
+        img: "https://enginefinders.co.uk/asset/img/range-rover-evoque-hero.webp",
         reason:
             "Revised post-2019 Ingenium engines and a lighter aluminium platform give it the strongest all-round ownership profile.",
         verdict: "Best",
@@ -424,7 +424,7 @@ export const rankings = [
         id: 3,
         ranking: "Best Used Buy",
         winner: "Discovery 4 (SDV6)",
-        img: "/images/rankings/discovery-4-sdv6.webp",
+        img: "https://enginefinders.co.uk/asset/img/range-rover-velar-hero.webp",
         reason:
             "Genuinely capable when the oil-interval history is proven — the discipline matters more than the mileage.",
         verdict: "Safe",
@@ -436,7 +436,7 @@ export const rankings = [
         id: 4,
         ranking: "Most Expensive Failure",
         winner: "306DT (TDV6/SDV6) Crank Failure",
-        img: "/images/rankings/306dt-crank-failure.webp",
+        img: "https://enginefinders.co.uk/asset/img/range-rover-velar-hero.webp",
         reason:
             "Catastrophic bearing failure, £6,500–£9,500 full recon, and largely unrepairable once it starts.",
         verdict: "Avoid",
@@ -448,7 +448,7 @@ export const rankings = [
         id: 5,
         ranking: "Safest Range Rover to Buy",
         winner: "L405 (2012–2021)",
-        img: "/images/rankings/range-rover-l405.webp",
+        img: "https://enginefinders.co.uk/asset/img/range-rover-sport-hero.webp",
         reason:
             "Typical values of £14,000–£55,000 against £6,500–£12,000 recon cost — comfortably safe across almost every example.",
         verdict: "Safe",
@@ -460,7 +460,7 @@ export const rankings = [
         id: 6,
         ranking: "Highest Risk Purchase",
         winner: "Early Evoque L538 (pre-2019, 204DTD)",
-        img: "/images/rankings/evoque-l538.webp",
+        img: "https://enginefinders.co.uk/asset/img/range-rover-sport-hero.webp",
         reason:
             "Timing chain tensioner risk sits on an ageing, lower-value host — the combination that flags 'Watch' most often.",
         verdict: "Watch",
@@ -472,7 +472,7 @@ export const rankings = [
         id: 7,
         ranking: "Best Family Land Rover",
         winner: "Discovery 5",
-        img: "/images/rankings/discovery-5.webp",
+        img: "https://enginefinders.co.uk/asset/img/jaguar-land-rover-448dt-diesel-engine.webp",
         reason:
             "Seven seats, the more dependable revised Ingenium range, and the best-supported specialist network.",
         verdict: "Best",
@@ -484,7 +484,7 @@ export const rankings = [
         id: 8,
         ranking: "Best Long-Term Keeper",
         winner: "Defender L663",
-        img: "/images/rankings/defender-l663.webp",
+        img: "https://enginefinders.co.uk/asset/img/land-rover-306d1-diesel-engine.webp",
         reason:
             "High host value across both engines fitted means replacement is comfortably 'Safe' at almost any spec.",
         verdict: "Best",

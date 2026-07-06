@@ -29,18 +29,19 @@ const failureSections = [
 const DatabaseSection = () => {
     const [openSections, setOpenSections] = useState<number[]>([0]);
     return (
-        
-            <section className='py-10  bg-[#070E17]'>
+
+        <section className='py-10  bg-[#070E17]'>
+            <div className='container-1'>
                 <div className='w-full max-w-3xl mx-auto text-center'>
                     <h2 className='text-2xl lg:text-3xl 2xl:text-6xl font-medium lg:font-semibold '>The Land Rover & Range Rover Failure Database</h2>
                     <div className=' m-2 h-0.5 w-[95%] bg-linear-to-l from-transparent via-golden to-transparent' />
-                    <p className='text-base lg:text-lg 2xl:text-xl'>A permanent, categorised reference — not symptom-chasing blog posts. Every entry links to a full breakdown of symptoms, root cause, mileage window, repair cost, and replacement cost.</p>
+                    <p className='text-sm md:text-base lg:text-lg 2xl:text-xl'>A permanent, categorised reference — not symptom-chasing blog posts. Every entry links to a full breakdown of symptoms, root cause, mileage window, repair cost, and replacement cost.</p>
                 </div>
 
                 <div className='hidden lg:block'>
                     <div className='my-6 flex flex-col justify-center'>
 
-                        <h3 className='lg:pl-20 2xl:pl-100 py-2 mb-2 flex items-center gap-2 font-bold text-2xl' >
+                        <h3 className='lg:pl-12 py-2 mb-2 flex items-center gap-2 font-bold text-2xl leading-relaxed' >
                             <FaWrench className='text-golden  ' />
                             {'Engine Failures'.toUpperCase()}</h3>
 
@@ -53,7 +54,7 @@ const DatabaseSection = () => {
 
                     <div className='my-6 flex flex-col justify-center'>
 
-                        <h3 className='lg:pl-20 2xl:pl-100 py-2 mb-2 flex items-center gap-2 font-bold text-2xl' >
+                        <h3 className='lg:pl-12  py-2 mb-2 flex items-center gap-2 font-bold text-2xl leading-relaxed' >
                             <FaWrench className='text-golden  ' />
                             {'Suspension Failures'.toUpperCase()}</h3>
 
@@ -66,7 +67,7 @@ const DatabaseSection = () => {
 
                     <div className='my-6 flex flex-col justify-center'>
 
-                        <h3 className='lg:pl-20 2xl:pl-100 py-2 mb-2 flex items-center gap-2 font-bold text-2xl' >
+                        <h3 className='lg:pl-12 py-2 mb-2 flex items-center gap-2 font-bold text-2xl leading-relaxed' >
                             <FaWrench className='text-golden  ' />
                             {'Drivetrain Failures'.toUpperCase()}</h3>
 
@@ -79,7 +80,7 @@ const DatabaseSection = () => {
 
                     <div className='my-6 flex flex-col justify-center'>
 
-                        <h3 className='lg:pl-20 2xl:pl-100 py-2 mb-2 flex items-center gap-2 font-bold text-2xl' >
+                        <h3 className='lg:pl-12  py-2 mb-2 flex items-center gap-2 font-bold text-2xl leading-relaxed' >
                             <FaWrench className='text-golden  ' />
                             {'Electrical Failures'.toUpperCase()}</h3>
 
@@ -108,9 +109,10 @@ const DatabaseSection = () => {
                         />
                     ))}
                 </div>
+            </div>
 
-            </section>
-       
+        </section>
+
     )
 }
 

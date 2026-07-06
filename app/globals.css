@@ -2,10 +2,37 @@
 
 @theme {
     --color-golden: #D4AF37;
+    /* --container-2xl: 1200px; */
+}
+
+:root {
+    --font-heading: var(--font-barlow-condensed);
+    --font-body: var(--font-lato);
+}
+
+.container-1 {
+    @apply container max-w-7xl mx-auto px-1 sm:px-3 lg:px-6 py-8
 }
 
 body {
     background-color: #002D22;
     opacity: 10px;
     color: white;
+    font-family: var(--font-lato), sans-serif;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-lato), sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-family: var(--font-lato), sans-serif;
+    font-weight: 400;
 }
